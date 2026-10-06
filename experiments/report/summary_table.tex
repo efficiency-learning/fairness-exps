@@ -1,0 +1,37 @@
+\begin{tabular}{llcccc}
+\toprule
+Dataset & Method & AUC $\uparrow$ & DD $\downarrow$ & $W_1$ $\downarrow$ & Parity viol. $\downarrow$\\
+\midrule
+Adult & \method{} & 0.842\,{\scriptsize$\pm$0.010} & 0.104\,{\scriptsize$\pm$0.012} & 9.58\,{\scriptsize$\pm$0.11} & 0.007\,{\scriptsize$\pm$0.003}\\
+ & FWC & 0.822\,{\scriptsize$\pm$0.013} & 0.112\,{\scriptsize$\pm$0.018} & 9.14\,{\scriptsize$\pm$0.07} & 0.053\,{\scriptsize$\pm$0.000}\\
+ & Stratified & 0.829\,{\scriptsize$\pm$0.012} & \textbf{0.088\,{\scriptsize$\pm$0.022}} & 12.38\,{\scriptsize$\pm$0.17} & 0.007\,{\scriptsize$\pm$0.003}\\
+ & UniPROT & 0.839\,{\scriptsize$\pm$0.010} & 0.165\,{\scriptsize$\pm$0.028} & 9.66\,{\scriptsize$\pm$0.12} & 0.709\,{\scriptsize$\pm$0.071}\\
+ & Uniform & 0.832\,{\scriptsize$\pm$0.011} & 0.165\,{\scriptsize$\pm$0.022} & 12.30\,{\scriptsize$\pm$0.14} & 0.527\,{\scriptsize$\pm$0.077}\\
+ & K-Means & \textbf{0.848\,{\scriptsize$\pm$0.006}} & 0.141\,{\scriptsize$\pm$0.019} & 11.66\,{\scriptsize$\pm$0.06} & 0.842\,{\scriptsize$\pm$0.032}\\
+ & K-Medoids & 0.845\,{\scriptsize$\pm$0.008} & 0.162\,{\scriptsize$\pm$0.014} & \textbf{8.40\,{\scriptsize$\pm$0.04}} & 0.824\,{\scriptsize$\pm$0.033}\\
+\midrule
+German & \method{} & \textbf{0.668\,{\scriptsize$\pm$0.042}} & 0.078\,{\scriptsize$\pm$0.036} & 17.72\,{\scriptsize$\pm$0.13} & 0.035\,{\scriptsize$\pm$0.011}\\
+ & FWC & 0.627\,{\scriptsize$\pm$0.040} & 0.071\,{\scriptsize$\pm$0.047} & 17.23\,{\scriptsize$\pm$0.07} & 0.053\,{\scriptsize$\pm$0.000}\\
+ & Stratified & 0.622\,{\scriptsize$\pm$0.047} & 0.072\,{\scriptsize$\pm$0.048} & 20.48\,{\scriptsize$\pm$0.14} & 0.035\,{\scriptsize$\pm$0.011}\\
+ & UniPROT & 0.630\,{\scriptsize$\pm$0.052} & 0.073\,{\scriptsize$\pm$0.043} & \textbf{17.17\,{\scriptsize$\pm$0.13}} & 0.306\,{\scriptsize$\pm$0.100}\\
+ & Uniform & 0.618\,{\scriptsize$\pm$0.043} & 0.071\,{\scriptsize$\pm$0.045} & 20.64\,{\scriptsize$\pm$0.22} & 0.389\,{\scriptsize$\pm$0.140}\\
+ & K-Means & 0.614\,{\scriptsize$\pm$0.051} & \textbf{0.066\,{\scriptsize$\pm$0.054}} & 22.33\,{\scriptsize$\pm$0.14} & 0.624\,{\scriptsize$\pm$0.095}\\
+ & K-Medoids & 0.645\,{\scriptsize$\pm$0.051} & 0.084\,{\scriptsize$\pm$0.036} & 17.42\,{\scriptsize$\pm$0.11} & 0.355\,{\scriptsize$\pm$0.120}\\
+\midrule
+Crime & \method{} & 0.888\,{\scriptsize$\pm$0.018} & 0.313\,{\scriptsize$\pm$0.048} & 39.13\,{\scriptsize$\pm$0.16} & 0.013\,{\scriptsize$\pm$0.002}\\
+ & FWC & 0.869\,{\scriptsize$\pm$0.010} & 0.327\,{\scriptsize$\pm$0.043} & 34.48\,{\scriptsize$\pm$0.13} & 0.053\,{\scriptsize$\pm$0.000}\\
+ & Stratified & 0.874\,{\scriptsize$\pm$0.017} & \textbf{0.288\,{\scriptsize$\pm$0.046}} & 43.26\,{\scriptsize$\pm$0.35} & 0.013\,{\scriptsize$\pm$0.002}\\
+ & UniPROT & \textbf{0.897\,{\scriptsize$\pm$0.012}} & 0.401\,{\scriptsize$\pm$0.038} & 37.42\,{\scriptsize$\pm$0.16} & 0.774\,{\scriptsize$\pm$0.096}\\
+ & Uniform & 0.885\,{\scriptsize$\pm$0.013} & 0.362\,{\scriptsize$\pm$0.054} & 43.01\,{\scriptsize$\pm$0.66} & 0.697\,{\scriptsize$\pm$0.089}\\
+ & K-Means & 0.894\,{\scriptsize$\pm$0.012} & 0.359\,{\scriptsize$\pm$0.038} & \textbf{33.36\,{\scriptsize$\pm$0.14}} & 0.791\,{\scriptsize$\pm$0.043}\\
+ & K-Medoids & 0.892\,{\scriptsize$\pm$0.010} & 0.381\,{\scriptsize$\pm$0.043} & 36.99\,{\scriptsize$\pm$0.14} & 0.715\,{\scriptsize$\pm$0.055}\\
+\midrule
+Drug & \method{} & 0.810\,{\scriptsize$\pm$0.020} & \textbf{0.050\,{\scriptsize$\pm$0.036}} & 4.39\,{\scriptsize$\pm$0.02} & 0.021\,{\scriptsize$\pm$0.006}\\
+ & FWC & 0.798\,{\scriptsize$\pm$0.022} & 0.071\,{\scriptsize$\pm$0.028} & 4.34\,{\scriptsize$\pm$0.02} & 0.053\,{\scriptsize$\pm$0.000}\\
+ & Stratified & 0.794\,{\scriptsize$\pm$0.017} & 0.053\,{\scriptsize$\pm$0.023} & 5.06\,{\scriptsize$\pm$0.03} & 0.021\,{\scriptsize$\pm$0.006}\\
+ & UniPROT & \textbf{0.819\,{\scriptsize$\pm$0.020}} & 0.134\,{\scriptsize$\pm$0.032} & \textbf{4.30\,{\scriptsize$\pm$0.02}} & 0.600\,{\scriptsize$\pm$0.084}\\
+ & Uniform & 0.808\,{\scriptsize$\pm$0.018} & 0.128\,{\scriptsize$\pm$0.066} & 5.05\,{\scriptsize$\pm$0.04} & 0.614\,{\scriptsize$\pm$0.144}\\
+ & K-Means & 0.810\,{\scriptsize$\pm$0.017} & 0.096\,{\scriptsize$\pm$0.055} & 4.34\,{\scriptsize$\pm$0.02} & 0.785\,{\scriptsize$\pm$0.036}\\
+ & K-Medoids & 0.816\,{\scriptsize$\pm$0.024} & 0.137\,{\scriptsize$\pm$0.042} & 4.36\,{\scriptsize$\pm$0.02} & 0.749\,{\scriptsize$\pm$0.063}\\
+\bottomrule
+\end{tabular}
